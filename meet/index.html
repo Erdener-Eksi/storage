@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeting Organizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Meeting Organizer</h1>
+    <form id="meeting-form">
+        <label for="topic">Toplantı Konusu:</label>
+        <input type="text" id="topic" name="topic" required><br>
+
+        <label for="date">Tarih:</label>
+        <input type="date" id="date" name="date" required><br>
+
+        <label for="startTime">Başlangıç Saati:</label>
+        <input type="time" id="startTime" name="startTime" required><br>
+
+        <label for="endTime">Bitiş Saati:</label>
+        <input type="time" id="endTime" name="endTime" required><br>
+
+        <label for="participants">Katılımcılar:</label>
+        <input type="text" id="participants" name="participants" required><br>
+
+        <button type="submit">Kaydet</button>
+    </form>
+
+    <h2>Toplantı Listesi</h2>
+    <ul id="meeting-list"></ul>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
